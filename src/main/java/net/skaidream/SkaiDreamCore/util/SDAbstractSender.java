@@ -26,22 +26,19 @@ public abstract class SDAbstractSender implements SDMessage
 	@Override
 	public MessageType sendGeneralMessage(Player sender, String message, Object... args)
 	{
-		// TODO Auto-generated method stub
-		return null;
+		return this.sendGeneralFixedMessage(sender, message, args);
 	}
 	
 	@Override
 	public MessageType sendGeneralMessage(CommandSender sender, String message, Object... args)
 	{
-		// TODO Auto-generated method stub
-		return null;
+		return this.sendGeneralFixedMessage(sender, message, args);
 	}
 	
 	@Override
 	public MessageType sendGeneralMessage(ConsoleCommandSender sender, String message, Object... args)
 	{
-		// TODO Auto-generated method stub
-		return null;
+		return this.sendGeneralFixedMessage(sender, message, args);
 	}
 	
 	@Override public abstract MessageType sendFixedMessage(Object obj, String message);
